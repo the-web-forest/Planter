@@ -8,6 +8,7 @@ import PartnerRepository from "../../External/Respositories/PartnerRepository";
 import PlantRepository from "../../External/Respositories/PlantRepository";
 import TreeRepository from "../../External/Respositories/TreeRepository";
 import UserRepository from "../../External/Respositories/UserRepository";
+import TimeHelper from "../../Helpers/TimeHelper";
 import NewPartnerPlantUseCaseOutput from "./NewPartnerPlantUseCaseOutput";
 
 export default class NewPartnerPlantUseCase {
@@ -81,8 +82,8 @@ export default class NewPartnerPlantUseCase {
             species: partnerTree.name,
             image: partnerTree.image,
             value: partnerTree.value,
-            createdAt: new Date(),
-            updatedAt: new Date(),
+            createdAt: TimeHelper.getBrazilTime(),
+            updatedAt: TimeHelper.getBrazilTime(),
             orderId: null,
             treeId: partnerTree.id,
             userId: user ? user.id : partnerPlant.userEmail,
