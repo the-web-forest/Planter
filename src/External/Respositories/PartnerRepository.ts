@@ -1,4 +1,4 @@
-import { model, Mongoose } from "mongoose";
+import { model } from "mongoose";
 import Partner from "../../Domain/Partner";
 import PartnerSchema from "../../Schemas/Partner.schema";
 

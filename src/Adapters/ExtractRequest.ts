@@ -1,4 +1,4 @@
-import { AzureFunction, HttpRequest } from "@azure/functions";
+import { HttpRequest } from "@azure/functions";
 import PartnerPlant from "../Domain/PartnerPlant";
 
 export default class Request {

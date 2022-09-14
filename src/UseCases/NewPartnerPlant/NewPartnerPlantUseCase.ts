@@ -57,15 +57,15 @@ export default class NewPartnerPlantUseCase {
     }
 
     private async getPartnerByCode(partnerCode: number): Promise<Partner> {
-        return await this.partnerRepository.getPartnerByCode(partnerCode);
+        return this.partnerRepository.getPartnerByCode(partnerCode);
     }
 
     private async getPartnerTreeById(treeId: string): Promise<Tree> {
-        return await this.treeRepository.getTreeById(treeId);
+        return this.treeRepository.getTreeById(treeId);
     }
 
     private async getUserByEmail(userEmail: string): Promise<User> {
-        return await this.userRepository.getUserByEmail(userEmail);
+        return this.userRepository.getUserByEmail(userEmail);
     }
 
     private validatePartner(partnerPlant: PartnerPlant, partner: Partner): boolean {

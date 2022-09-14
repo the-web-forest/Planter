@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import { Schema } from "mongoose";
 import Partner from "../Domain/Partner";
 
 const PartnerSchema = new Schema<Partner>({
