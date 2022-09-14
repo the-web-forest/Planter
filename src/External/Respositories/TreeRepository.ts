@@ -1,4 +1,4 @@
-import { model, Mongoose } from "mongoose";
+import { model } from "mongoose";
 import Tree from "../../Domain/Tree";
 import TreeSchema from "../../Schemas/Tree.schema";
 
